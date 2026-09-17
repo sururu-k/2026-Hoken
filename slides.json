@@ -6,7 +6,7 @@
       "type": "cover",
       "title": "水質汚濁と健康\n知多の海から考える",
       "author": "",
-      "image": ""
+      "image": "img/cover-chita.jpg"
     },
     {
       "type": "split",
@@ -17,8 +17,8 @@
         {"heading": "工場が並ぶ海岸", "text": "東海市＝日本製鉄名古屋製鉄所、半田・武豊＝衣浦港の臨海工業地帯、火力発電所・化学工場。"},
         {"heading": "愛知用水が支えた", "text": "大きな川がなく水不足。1961年開通の愛知用水で農業も工業も発展。"}
       ],
-      "image": "",
-      "caption": ""
+      "image": "img/steel.jpg",
+      "caption": "日本製鉄名古屋製鉄所（東海市） CC BY-SA 4.0 via Wikimedia Commons"
     },
     {
       "type": "split",
@@ -29,8 +29,20 @@
         {"heading": "赤潮と貧酸素水塊", "text": "窒素・リンが増えると赤潮、夏は底に酸素の少ない水のかたまり。魚や貝が死ぬ。"},
         {"heading": "規制の歴史", "text": "1980年COD総量削減、1995年窒素・リン基準化、2002年総量削減。"}
       ],
-      "image": "",
-      "caption": ""
+      "image": "img/isebay.jpg",
+      "caption": "伊勢湾 Landsat画像 Public Domain (NASA) via Wikimedia Commons"
+    },
+    {
+      "type": "split",
+      "title": "実際の例：愛知用水",
+      "meta": "1961年開通・知多の命の水",
+      "items": [
+        {"heading": "112km＋1012kmの水路", "text": "牧尾ダムを水源に兼山取水口で取水。愛知池→佐布里池→美浜調整池→離島まで送水。"},
+        {"heading": "きっかけは1947年大干ばつ", "text": "溜池が枯渇し用水運動へ。1955年公団設立・1957年着工・1961年9月完成。殉職者56名。"},
+        {"heading": "工業立地を可能に", "text": "東海製鉄所（現・日本製鉄名古屋製鉄所）立地の条件に。佐布里池は工業用水、知多蒸溜所の仕込み水にも。"}
+      ],
+      "image": "img/sori-ike.jpg",
+      "caption": "佐布里池（知多市・愛知用水調整池） CC BY-SA 4.0 via Wikimedia Commons"
     },
     {
       "type": "split",
@@ -41,8 +53,8 @@
         {"heading": "きれいにしすぎた面も", "text": "規制で栄養が不足する貧栄養化。海苔の色落ちなどの一因に。"},
         {"heading": "2022年度〜社会実験", "text": "三河湾で下水浄化センター2か所の放流水の窒素・リンを上限まで戻す試み。"}
       ],
-      "image": "",
-      "caption": ""
+      "image": "img/nori.jpg",
+      "caption": "海苔養殖風景 CC BY-SA 2.0 via Wikimedia Commons"
     },
     {
       "type": "split",
@@ -51,10 +63,10 @@
       "items": [
         {"heading": "水質汚濁防止法", "text": "1970年公布・1971年施行。特定工場の排水・地下浸透を規制、罰則と賠償責任。"},
         {"heading": "総量で守る", "text": "伊勢湾・三河湾は1980年から汚れの総量を減らす規制が続く。"},
-        {"heading": "台所も海につながる", "text": "工場だけでなく家庭の排水も原因に。油・洗剤・食べ残しに注意。"}
+        {"heading": "台所も海につながる", "text": "工場だけでなく家庭の排水も原因に。油・洗剤・食べ残しに注意。愛知用水を大切に使う。"}
       ],
-      "image": "",
-      "caption": ""
+      "image": "img/aichi-canal.jpg",
+      "caption": "愛知用水（豊明市付近） CC BY-SA 4.0 via Wikimedia Commons"
     }
   ]
 }
