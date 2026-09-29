@@ -1,5 +1,6 @@
 import base64
 import os
+import shutil
 
 def get_base64(filepath):
     if os.path.exists(filepath):
@@ -161,10 +162,9 @@ html_content = '''<!DOCTYPE html>
         <div class="slide-body">
           <div class="two-column no-image">
             <div>
-              <div class="content-text">工場のルールを守ることに加え、台所の油や洗剤、食べ残しなど、家庭の排水に気をつけることが今は大切とみんな知っていますが昔はまもられていなくて私の地域もまだ川に垂れ流しや
-井戸から水を取ることもしていました</div>
-              <div class="content-text">昔の例　
-現在どうかいぜんしているのｊか　バキュームカーとかね</div>
+              <div class="content-text">工場のルールを守ることに加え、台所の油や洗剤、食べ残しなど、家庭の排水に気をつけることが今は大切です。</div>
+              <div class="content-text">昔はルールが守られておらず、私の地域でも川への垂れ流しや井戸水の利用、バキュームカーでの汲み取りが行われていました。</div>
+              <div class="content-text">現在は下水道の整備が進み、生活排水による水質問題は大きく改善されています。</div>
             </div>
             <div>
               <div class="media-box"></div>
@@ -198,7 +198,12 @@ html_content = '''<!DOCTYPE html>
 </html>
 '''
 
-with open(r'C:\Users\shieru_k\2026-Hoken\suishitsu-odaku-chita.html', 'w', encoding='utf-8') as f:
+html_path = r'C:\Users\shieru_k\2026-Hoken\suishitsu-odaku-chita.html'
+index_path = r'C:\Users\shieru_k\2026-Hoken\index.html'
+
+with open(html_path, 'w', encoding='utf-8') as f:
     f.write(html_content)
 
-print('Generated HTML successfully with filled cause in quotes')
+shutil.copy(html_path, index_path)
+
+print('Generated suishitsu-odaku-chita.html and index.html successfully')
