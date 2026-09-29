@@ -8,6 +8,7 @@ def get_base64(filepath):
     return ''
 
 cover_img = get_base64(r'C:\Users\shieru_k\2026-Hoken\img\cover-chita.jpg')
+steel_img = get_base64(r'C:\Users\shieru_k\2026-Hoken\img\steel.jpg')
 canal_img = get_base64(r'C:\Users\shieru_k\2026-Hoken\img\aichi-canal.jpg')
 map_img = get_base64(r'C:\Users\shieru_k\2026-Hoken\img\isebay_map.jpg')
 reg_img = get_base64(r'C:\Users\shieru_k\2026-Hoken\img\water_regulation.jpg')
@@ -74,7 +75,31 @@ html_content = '''<!DOCTYPE html>
         </div>
       </section>
 
-      <!-- Slide 2: 調べたきっかけ -->
+      <!-- Slide 2: 知多の環境と臨海工業 -->
+      <section>
+        <div class="standard-header">
+          <h2>知多の環境と臨海工業</h2>
+          <span class="header-meta">東海・半田・武豊</span>
+        </div>
+        <div class="slide-body">
+          <div class="two-column">
+            <div>
+              <div class="content-heading">半島と二つの海</div>
+              <div class="content-text">西＝伊勢湾、東＝三河湾（知多湾・衣浦湾）。南は伊良湖水道で太平洋へ。</div>
+              <div class="content-heading">工場が並ぶ海岸</div>
+              <div class="content-text">東海市＝日本製鉄名古屋製鉄所、半田・武豊＝衣浦港の臨海工業地帯、火力発電所・化学工場。</div>
+            </div>
+            <div>
+              <div class="media-box">
+                <img src="''' + steel_img + '''" alt="日本製鉄名古屋製鉄所">
+              </div>
+              <div class="simple-caption">日本製鉄名古屋製鉄所（東海市）</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 3: 調べたきっかけ -->
       <section>
         <div class="standard-header">
           <h2>調べたきっかけ</h2>
@@ -100,7 +125,7 @@ html_content = '''<!DOCTYPE html>
         </div>
       </section>
 
-      <!-- Slide 3: 愛知県の海の特徴 -->
+      <!-- Slide 4: 愛知県の海の特徴 -->
       <section>
         <div class="standard-header">
           <h2>愛知県の海の特徴</h2>
@@ -124,7 +149,7 @@ html_content = '''<!DOCTYPE html>
         </div>
       </section>
 
-      <!-- Slide 4: 水質汚濁防止法と規制 -->
+      <!-- Slide 5: 水質汚濁防止法と規制 -->
       <section>
         <div class="standard-header">
           <h2>水質汚濁防止法と規制</h2>
@@ -152,7 +177,7 @@ html_content = '''<!DOCTYPE html>
         </div>
       </section>
 
-      <!-- Slide 5: 規制の成果と貧栄養化 -->
+      <!-- Slide 6: 規制の成果と貧栄養化 -->
       <section>
         <div class="standard-header">
           <h2>規制の成果と貧栄養化</h2>
@@ -176,7 +201,7 @@ html_content = '''<!DOCTYPE html>
         </div>
       </section>
 
-      <!-- Slide 6: これからの取り組み -->
+      <!-- Slide 7: これからの取り組み -->
       <section>
         <div class="standard-header">
           <h2>これからの取り組み</h2>
@@ -227,4 +252,4 @@ html_content = '''<!DOCTYPE html>
 with open(r'C:\Users\shieru_k\2026-Hoken\suishitsu-odaku-chita.html', 'w', encoding='utf-8') as f:
     f.write(html_content)
 
-print('Generated simplified suishitsu-odaku-chita.html successfully')
+print('Generated 7-slide suishitsu-odaku-chita.html successfully')
