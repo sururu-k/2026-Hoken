@@ -18,7 +18,7 @@ html_content = '''<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>水質汚濁と健康 — 知多の海と生活の歴史</title>
+  <title>産業排水や水質汚濁と健康</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reveal.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/theme/white.min.css">
   <style>
@@ -65,10 +65,7 @@ html_content = '''<!DOCTYPE html>
           <div class="cover-content">
             <div>
               <div style="color: var(--corporate-blue); font-size: 18px; font-weight: bold; letter-spacing: 0.05em; margin-bottom: 10px;">発表資料</div>
-              <h1 class="cover-title">水質汚濁と健康<br>知多の海と生活の歴史</h1>
-            </div>
-            <div style="font-size: 20px; color: var(--text-sub); font-weight: bold; border-top: 1px solid var(--border-gray); padding-top: 16px;">
-              テーマ：産業排水・家庭排水と貧栄養化の課題
+              <h1 class="cover-title">産業排水や水質汚濁と健康<br>知多の海と生活</h1>
             </div>
           </div>
           <div class="cover-media">
@@ -77,125 +74,123 @@ html_content = '''<!DOCTYPE html>
         </div>
       </section>
 
-      <!-- Slide 2: 身近な歴史 -->
+      <!-- Slide 2: 調べたきっかけ -->
       <section>
         <div class="standard-header">
-          <h2>身近な歴史：知多用水と生活排水</h2>
-          <span class="header-meta">手掘りの歴史から下水道整備へ</span>
+          <h2>調べたきっかけ</h2>
+          <span class="header-meta">知多用水と昔の暮らし</span>
         </div>
         <div class="slide-body">
           <div class="two-column">
             <div>
-              <div class="content-heading">手掘りで拓いた水路</div>
-              <div class="content-text">小学生の頃から、毎年知多用水を手で掘り起こして水を引いた先人の苦労を聞いて育つ。</div>
-              <div class="content-heading">昔の排水環境</div>
-              <div class="content-text">昔は川への垂れ流しや井戸水利用、バキュームカーなど、衛生や水質管理の課題が多かった。</div>
-              <div class="content-heading">昔と今の変化を探る</div>
-              <div class="content-text">現在は下水道整備が進んだが、昔と今で水環境や海がどう変化したのかを調査。</div>
+              <div class="content-heading">知多用水の話</div>
+              <div class="content-text">私の住んでいる知多は小学校の頃から毎年知多用水を手で掘り始めた話などをされて育ってきました。</div>
+              <div class="content-heading">昔と今の変化</div>
+              <div class="content-text">昔と今ではかなり変わったという話も聞いたのでインターネットで調べてみました。</div>
+              <div class="content-heading">昔の生活環境</div>
+              <div class="content-text">昔は川に垂れ流しや井戸から水を取ることもしていて、バキュームカーなども使われていました。</div>
             </div>
             <div>
               <div class="media-box">
-                <img src="''' + canal_img + '''" alt="愛知用水">
+                <img src="''' + canal_img + '''" alt="知多用水">
               </div>
-              <div class="simple-caption">知多用水・愛知用水の歴史</div>
+              <div class="simple-caption">知多用水の風景</div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Slide 3: 伊勢湾・三河湾 -->
+      <!-- Slide 3: 愛知県の海の特徴 -->
       <section>
         <div class="standard-header">
-          <h2>汚れがたまりやすい二つの海</h2>
-          <span class="header-meta">伊勢湾・三河湾の閉鎖性水域</span>
+          <h2>愛知県の海の特徴</h2>
+          <span class="header-meta">伊勢湾と三河湾</span>
         </div>
         <div class="slide-body">
           <div class="two-column">
             <div>
-              <div class="content-heading">水深と地形の特質</div>
-              <div class="content-text">伊勢湾は平均水深19.5m、三河湾は約9mと浅い。湾口が狭く海水が入れ替わりにくい閉鎖性水域。</div>
-              <div class="content-heading">汚濁のリスク</div>
-              <div class="content-text">工場排水や家庭の洗剤・有機物が流入すると、赤潮や底層の酸欠（貧酸素水塊）が発生しやすい。</div>
-              <div class="content-heading">漁業と健康への影響</div>
-              <div class="content-text">酸素不足により魚や貝が死滅するなど、生態系や地域の食文化に直結する害が発生。</div>
+              <div class="content-heading">浅くて汚れやすい海</div>
+              <div class="content-text">伊勢湾の深さは19.5メートル、三河湾は約9メートルと浅く、両方とも海水の入れ替わりが少なく汚れがたまりやすい海です。</div>
+              <div class="content-heading">排水の影響</div>
+              <div class="content-text">工場や家庭の排水に洗剤などを流すと他の海と比べて、魚や貝が死ぬことがあります。</div>
             </div>
             <div>
               <div class="media-box">
                 <img src="''' + map_img + '''" alt="伊勢湾・三河湾の地図">
               </div>
-              <div class="simple-caption">伊勢湾・三河湾の位置と地形</div>
+              <div class="simple-caption">伊勢湾と三河湾の地図</div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Slide 4: 水質規制の歴史 -->
+      <!-- Slide 4: 水質汚濁防止法と規制 -->
       <section>
         <div class="standard-header">
-          <h2>水質規制の歴史</h2>
-          <span class="header-meta">1970年代からの工場排水対策</span>
+          <h2>水質汚濁防止法と規制</h2>
+          <span class="header-meta">工場排水のルール</span>
         </div>
         <div class="slide-body">
           <div class="two-column">
             <div>
-              <div class="content-heading">水質汚濁防止法（1970公布 / 1971施行）</div>
-              <div class="content-text">工場排水の基準やルールを全国的に明確化し、汚濁物質の排出を厳密に規制。</div>
-              <div class="content-heading">総量削減の導入（1980年〜）</div>
-              <div class="content-text">濃度規制だけでなく、地域全体で排出荷重の総量を減らす取組（COD規制）が開始。</div>
-              <div class="content-heading">窒素・リンの環境基準（1995年 / 2002年）</div>
-              <div class="content-text">1995年に富栄養化対策として基準が設定され、2002年より窒素・リンの総量削減が開始。</div>
+              <div class="content-heading">1970年公布・1971年施行</div>
+              <div class="content-text">1970年公布、1971年施行の水質汚濁防止法により、工場排水のルールが決められました。</div>
+              <div class="content-heading">1980年〜</div>
+              <div class="content-text">1980年から汚れを減らす総量削減の取り組みが始まりました。</div>
+              <div class="content-heading">1995年</div>
+              <div class="content-text">1995年には、海域における窒素およびリンに係る環境基準が設定されました。</div>
+              <div class="content-heading">2002年〜</div>
+              <div class="content-text">2002年からは、窒素およびリンを対象とした総量削減が始まりました。</div>
             </div>
             <div>
               <div class="media-box">
-                <img src="''' + reg_img + '''" alt="水質規制の歩み">
+                <img src="''' + reg_img + '''" alt="規制の流れ">
               </div>
-              <div class="simple-caption">水質汚濁防止法と総量削減の変遷</div>
+              <div class="simple-caption">水質規制の流れ</div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Slide 5: 貧栄養化と社会実験 -->
+      <!-- Slide 5: 規制の成果と貧栄養化 -->
       <section>
         <div class="standard-header">
-          <h2>規制の成果と新たな課題</h2>
-          <span class="header-meta">貧栄養化と2022年〜の社会実験</span>
+          <h2>規制の成果と貧栄養化</h2>
+          <span class="header-meta">ノリ・アサリ・イカナゴの減少</span>
         </div>
         <div class="slide-body">
           <div class="two-column">
             <div>
-              <div class="content-heading">貧栄養化の発生</div>
-              <div class="content-text">厳しい排水規制により海は綺麗になった一方、栄養塩（窒素・リン）が不足する事態へ。</div>
-              <div class="content-heading">水産業への影響</div>
-              <div class="content-text">栄養不足によってノリの色落ちが発生し、アサリやイカナゴの漁獲量が激減。</div>
-              <div class="content-heading">2022年度〜 栄養塩戻し社会実験</div>
-              <div class="content-text">三河湾では下水浄化センター2か所の放流水の窒素・リンを国の上限まで戻す試みを運用中。</div>
+              <div class="content-heading">きれいになった海の課題</div>
+              <div class="content-text">規制で海はきれいになりましたが、今度は栄養が足りない貧栄養化が起き、ノリやアサリ、イカナゴが減りました。</div>
+              <div class="content-heading">2022年度からの実験</div>
+              <div class="content-text">三河湾では2022年度から、下水浄化センター2か所の放流水の窒素・リンを国の上限まで戻す社会実験が始まっています。</div>
             </div>
             <div>
               <div class="media-box">
                 <img src="''' + nori_img + '''" alt="ノリ養殖">
               </div>
-              <div class="simple-caption">ノリ・アサリ等の漁獲減少と貧栄養化</div>
+              <div class="simple-caption">ノリやアサリへの影響</div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Slide 6: 画像がない場合でも枠が出ない1カラムスライド -->
+      <!-- Slide 6: これからの取り組み -->
       <section>
         <div class="standard-header">
-          <h2>豊かな海を守るために</h2>
-          <span class="header-meta">「汚さないこと」と「豊かな海」の両立</span>
+          <h2>これからの取り組み</h2>
+          <span class="header-meta">両立と家庭での意識</span>
         </div>
         <div class="slide-body">
           <div class="two-column no-image">
             <div>
-              <div class="content-heading">昔と今の環境変化</div>
-              <div class="content-text">昔は川への垂れ流しやバキュームカー、井戸水利用などインフラが未整備だったが、現在は下水道や浄化施設が普及。</div>
-              <div class="content-heading">家庭でできる排水対策</div>
-              <div class="content-text">工場の規制遵守はもちろん、台所の油・洗剤・食べ残しを流さないなど、家庭での意識と実践が重要。</div>
-              <div class="content-heading">適正なバランス管理</div>
-              <div class="content-text">単に水を綺麗にするだけでなく、豊かな生態系を育む栄養バランスの保たれた水質管理が求められている。</div>
+              <div class="content-heading">両立が必要</div>
+              <div class="content-text">汚さないことと、豊かな海を守ることの両立が必要です。</div>
+              <div class="content-heading">家庭で気をつけること</div>
+              <div class="content-text">工場のルールを守ることに加え、台所の油や洗剤、食べ残しなど、家庭の排水に気をつけることが今は大切です。</div>
+              <div class="content-heading">昔と今の変化</div>
+              <div class="content-text">昔はまもられていなくて川への垂れ流しや井戸水、バキュームカーの時代でしたが、現在は改善が進んでいます。</div>
             </div>
             <div>
               <div class="media-box"></div>
@@ -214,7 +209,6 @@ html_content = '''<!DOCTYPE html>
       transition: 'fade'
     });
 
-    // 画像がない場合や読み込み失敗時に枠を非表示にして1カラム化する自動JS
     document.addEventListener('DOMContentLoaded', function() {
       document.querySelectorAll('.two-column').forEach(function(col) {
         var img = col.querySelector('.media-box img');
@@ -233,4 +227,4 @@ html_content = '''<!DOCTYPE html>
 with open(r'C:\Users\shieru_k\2026-Hoken\suishitsu-odaku-chita.html', 'w', encoding='utf-8') as f:
     f.write(html_content)
 
-print('Generated suishitsu-odaku-chita.html successfully')
+print('Generated simplified suishitsu-odaku-chita.html successfully')
