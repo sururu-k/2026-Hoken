@@ -172,8 +172,8 @@ html_content = '''<!DOCTYPE html>
           <div class="two-column no-image">
             <div>
               <div class="content-text">工場のルールを守ることに加え、台所の油や洗剤、食べ残しなど、<span class="marker">家庭の排水に気をつけること</span>が今は大切とみんな知っています。</div>
-              <div class="content-text">昔はルールが守られておらず、私の地域でも<span class="hl-red">川への垂れ流し</span>や<span class="hl-red">井戸水の利用</span>、<span class="hl-red">バキュームカーでの汲み取り</span>が行われていました。</div>
-              <div class="content-text">そして、そうした川への垂れ流しや井戸水、バキュームカーの利用は<span class="hl-red">今も残っています</span>。</div>
+              <div class="content-text">昔は守られていなくて、私の地域でも<span class="hl-red">川への垂れ流しや井戸から水を取ること</span>もしていました。</div>
+              <div class="content-text">そこから<span class="hl-blue">バキュームカーの利用など改善が進んできましたが</span>、<span class="hl-red">今もそうした環境は残っています</span>。</div>
             </div>
             <div>
               <div class="media-box"></div>
@@ -215,4 +215,4 @@ with open(html_path, 'w', encoding='utf-8') as f:
 
 shutil.copy(html_path, index_path)
 
-print('Generated HTML successfully with "imamo desu" update')
+print('Generated HTML successfully with "垂れ流し→バキュームカー" transition')
