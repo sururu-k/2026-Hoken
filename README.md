@@ -1,6 +1,7 @@
 # 2026-Hoken
 
-保健の発表資料リポジトリ。
+水質汚濁と健康（知多の海と生活の歴史）に関する発表資料リポジトリ。
 
-- 水質汚濁と健康（知多特化・2分原稿）: [水質汚濁と健康.md](水質汚濁と健康.md)
-- スライド（標準Reveal.js・知多特化6枚（画像つき））: https://sururu-k.github.io/2026-Hoken/suishitsu-odaku-chita.html
+- 発表原稿・資料: [保健.md](保健.md)
+- スライド（Reveal.js）: [suishitsu-odaku-chita.html](suishitsu-odaku-chita.html)
+- スライド構成データ: [slides.json](slides.json)
