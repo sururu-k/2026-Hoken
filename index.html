@@ -13,6 +13,9 @@
       --text-sub: #475569;
       --border-gray: #cbd5e1;
       --bg-white: #ffffff;
+      --highlight-yellow: #fef08a;
+      --accent-red: #dc2626;
+      --accent-orange: #d97706;
     }
     body { background: #1e293b; margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif; }
     .reveal { background: var(--bg-white); }
@@ -25,16 +28,22 @@
     .two-column.no-image { grid-template-columns: 1fr !important; gap: 0 !important; }
     .two-column.no-image .media-box { display: none !important; border: none !important; }
 
-    .content-text { font-size: 20px; line-height: 1.8; color: #1e293b; margin-bottom: 20px; white-space: pre-wrap; }
-    .bullet-list { font-size: 20px; line-height: 1.8; color: #1e293b; margin-bottom: 12px; }
+    .content-text { font-size: 20px; line-height: 1.85; color: #1e293b; margin-bottom: 20px; white-space: pre-wrap; }
+    .bullet-list { font-size: 20px; line-height: 1.85; color: #1e293b; margin-bottom: 14px; }
     
-    .media-box { width: 100%; height: 420px; border: 1px solid var(--border-gray); border-radius: 6px; overflow: hidden; background: #fff; }
+    /* 文字装飾スタイル */
+    .hl-blue { color: var(--corporate-blue); font-weight: bold; }
+    .hl-red { color: var(--accent-red); font-weight: bold; }
+    .hl-orange { color: var(--accent-orange); font-weight: bold; }
+    .marker { background: linear-gradient(transparent 60%, var(--highlight-yellow) 60%); font-weight: bold; padding: 0 4px; }
+    
+    .media-box { width: 100%; height: 420px; border: 1px solid var(--border-gray); border-radius: 6px; overflow: hidden; background: #fff; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
     .media-box img { width: 100%; height: 100%; object-fit: cover; display: block; }
     .media-box:empty, .media-box img[src=""], .media-box img:not([src]) { display: none !important; border: none !important; }
     
     .cover-body { height: 100%; padding: 50px; display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 40px; align-items: center; }
-    .cover-title { font-size: 40px !important; font-weight: bold !important; color: var(--text-main) !important; line-height: 1.35 !important; margin-bottom: 20px !important; }
-    .cover-media { height: 440px; border: 1px solid var(--border-gray); border-radius: 6px; overflow: hidden; }
+    .cover-title { font-size: 42px !important; font-weight: bold !important; color: var(--text-main) !important; line-height: 1.35 !important; margin-bottom: 20px !important; }
+    .cover-media { height: 440px; border: 1px solid var(--border-gray); border-radius: 6px; overflow: hidden; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); }
     .cover-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
   </style>
 </head>
@@ -47,7 +56,7 @@
           <div class="cover-content">
             <div>
               <div style="color: var(--corporate-blue); font-size: 18px; font-weight: bold; letter-spacing: 0.05em; margin-bottom: 10px;">発表資料</div>
-              <h1 class="cover-title">産業排水や　水質汚濁と健康</h1>
+              <h1 class="cover-title"><span class="hl-blue">産業排水</span>や<br><span class="marker">水質汚濁と健康</span></h1>
             </div>
           </div>
           <div class="cover-media">
@@ -64,8 +73,8 @@
         <div class="slide-body">
           <div class="two-column">
             <div>
-              <div class="content-text">私の住んでいる知多は小学校の頃から毎年知多用水を手で掘り始めた話しなどをされて育ってきました　</div>
-              <div class="content-text">昔と今ではかなり変わったという話も聞いたのでインターネットで調べて見ました</div>
+              <div class="content-text">私の住んでいる知多は小学校の頃から毎年<span class="marker">知多用水を手で掘り始めた話し</span>などをされて育ってきました　</div>
+              <div class="content-text"><span class="hl-blue">昔と今ではかなり変わった</span>という話も聞いたのでインターネットで調べて見ました</div>
             </div>
             <div>
               <div class="media-box">
@@ -84,8 +93,8 @@
         <div class="slide-body">
           <div class="two-column">
             <div>
-              <div class="content-text">愛知県の海で伊勢は均の深さ19.5メートル、三河湾は約9メートルと浅く、両方とも海水の入れ替わりが少なく汚れがたまりやすい海です。</div>
-              <div class="content-text">工場や家庭の排水に酸素が極端に多かったり　洗剤などを流すと他の海と比べて、魚や貝が死ぬことがあります。</div>
+              <div class="content-text">愛知県の海で伊勢湾は平均の深さ<span class="hl-blue">19.5メートル</span>、三河湾は約<span class="hl-blue">9メートル</span>と浅く、両方とも海水の入れ替わりが少なく<span class="hl-red">汚れがたまりやすい海</span>です。</div>
+              <div class="content-text">工場や家庭の排水に酸素が極端に多かったり　洗剤などを流すと他の海と比べて、<span class="hl-red">魚や貝が死ぬこと</span>があります。</div>
             </div>
             <div>
               <div class="media-box">
@@ -104,10 +113,10 @@
         <div class="slide-body">
           <div class="two-column">
             <div>
-              <div class="bullet-list">・1970年公布、1971年施行の水質汚濁防止法により、工場排水のルールが決められました。</div>
-              <div class="bullet-list">・1980年から汚れを減らす総量削減の取り組みが始まりました。</div>
-              <div class="bullet-list">・1995年には、海域における窒素およびリンに係る環境基準が設定されました。</div>
-              <div class="bullet-list">・2002年からは、窒素およびリンを対象とした総量削減が始まりました。</div>
+              <div class="bullet-list">・<span class="hl-blue">1970年</span>公布、<span class="hl-blue">1971年</span>施行の<span class="marker">「水質汚濁防止法」</span>により、工場排水のルールが決められました。</div>
+              <div class="bullet-list">・<span class="hl-blue">1980年</span>から汚れを減らす<span class="marker">総量削減</span>の取り組みが始まりました。</div>
+              <div class="bullet-list">・<span class="hl-blue">1995年</span>には、海域における<span class="hl-blue">窒素およびリン</span>に係る<span class="marker">環境基準</span>が設定されました。</div>
+              <div class="bullet-list">・<span class="hl-blue">2002年</span>からは、<span class="hl-blue">窒素およびリンを対象とした総量削減</span>が始まりました。</div>
             </div>
             <div>
               <div class="media-box">
@@ -126,8 +135,8 @@
         <div class="slide-body">
           <div class="two-column">
             <div>
-              <div class="content-text">原因は「排水規制や下水処理の強化により窒素やリンの流出が減りすぎたこと」</div>
-              <div class="content-text">規制で海はきれいになりましたが、今度は栄養が足りない貧栄養化が起き、ノリやアサリ、イカナゴが減りました。三河湾では2022年度から、下水浄化センター2か所の放流水の窒素・リンを国の上限まで戻す社会実験が始まっています。</div>
+              <div class="content-text">原因は「<span class="marker">排水規制や下水処理の強化により窒素やリンの流出が減りすぎたこと</span>」</div>
+              <div class="content-text">規制で海はきれいになりましたが、今度は栄養が足りない<span class="hl-orange">貧栄養化</span>が起き、<span class="hl-red">ノリやアサリ、イカナゴが減りました</span>。<br>三河湾では<span class="hl-blue">2022年度</span>から、下水浄化センター2か所の放流水の<span class="marker">窒素・リンを国の上限まで戻す社会実験</span>が始まっています。</div>
             </div>
             <div>
               <div class="media-box">
@@ -146,9 +155,9 @@
         <div class="slide-body">
           <div class="two-column no-image">
             <div>
-              <div class="content-text">工場のルールを守ることに加え、台所の油や洗剤、食べ残しなど、家庭の排水に気をつけることが今は大切です。</div>
-              <div class="content-text">昔はルールが守られておらず、私の地域でも川への垂れ流しや井戸水の利用、バキュームカーでの汲み取りが行われていました。</div>
-              <div class="content-text">現在は下水道の整備が進み、生活排水による水質問題は大きく改善されています。</div>
+              <div class="content-text">工場のルールを守ることに加え、台所の油や洗剤、食べ残しなど、<span class="marker">家庭の排水に気をつけること</span>が今は大切です。</div>
+              <div class="content-text">昔はルールが守られておらず、私の地域でも<span class="hl-red">川への垂れ流し</span>や<span class="hl-red">井戸水の利用</span>、<span class="hl-red">バキュームカーでの汲み取り</span>が行われていました。</div>
+              <div class="content-text">現在は<span class="hl-blue">下水道の整備が進み</span>、生活排水による水質問題は大きく改善されています。</div>
             </div>
             <div>
               <div class="media-box"></div>
